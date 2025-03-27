@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GuillaumeTestScene.unity
     guid: f2b1558ed422ff4449b67c9c6c5ccc14
+  - enabled: 0
+    path: Assets/Scenes/GuillaumeTestCopyDemo.unity
+    guid: 8764be7a18ea7ff42b1c3e984c552ffb
+  - enabled: 0
+    path: Assets/Scenes/DemoScene.unity
+    guid: 1f27338c1f4132e44ab572ee3ef919f8
+  - enabled: 1
+    path: Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoScene.unity
+    guid: 319dafa5c80f29f428dc1e0d03f04177
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 11bf5996bb51efd46aa4921b8c55e32f, type: 2}
