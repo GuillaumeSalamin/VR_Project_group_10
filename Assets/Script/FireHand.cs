@@ -1,39 +1,47 @@
 using UnityEngine;
 using UnityEngine.XR; 
+using UnityEngine.InputSystem;
 
 
 public class FireHand : MonoBehaviour
 {
-    private GameObject leftHand;
-    private GameObject rightHand;
     private Light fireLight;
 
-    public InputDevice _leftController;
-    public InputDevice _rightController;
-    public InputDevice _HMD;
+    [SerializeField]
+    private GameObject FireBall;
 
     private InputData _inputData;
+
+    public InputActionReference triggerButton;
+    public InputActionReference gripButton;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        leftHand = GameObject.Find("Left Collider");
-        rightHand = GameObject.Find("Right Controller");
         fireLight = GetComponent<Light>();
 
-        _inputData = GetComponent<InputData>();
+        //_inputData = GetComponent<InputData>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (_inputData._leftController.TryGetFeatureValue(CommonUsages.primaryButton, out bool Abutton))
+        if(triggerButton.action.triggered)
         {
-            Debug.Log("A button: " + Abutton);
+            Debug.Log("Left Hand Triggered");
+            Instantiate(FireBall, transform.position, transform.rotation);
         }
-        if (_inputData._leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool Bbutton))
+        if(gripButton.action.triggered)
         {
-            Debug.Log("B button: " + Bbutton);
+            Debug.Log("Left Hand grip");
+            if(fireLight.intensity <= 20)
+            {
+                fireLight.intensity = 30;
+            }
+            else
+            {
+                fireLight.intensity = 0;
+            }
         }
     }
 
