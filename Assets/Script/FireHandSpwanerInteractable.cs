@@ -26,10 +26,14 @@ public class FireHandSpwanerInteractable : MonoBehaviour
         if ((collision.gameObject.name == "Left Collider" || collision.gameObject.name == "Right Controller" ) && !isSelected)
         {
             isSelected = true;
-            //Debug.Log("Fire Hand Obtained");
-            WorldState.GetComponent<WorldState>().fireHandObtantion();
-            Destroy(gameObject);
+            GiveFireHand();
         }
+    }
+
+    public void GiveFireHand()
+    {
+        WorldState.GetComponent<WorldState>().fireHandObtantion();
+        Destroy(gameObject);
     }
 
     IEnumerator FireHandObtantionRoutine()//for now this is not used
