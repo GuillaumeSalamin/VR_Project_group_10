@@ -3124,6 +3124,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireHand
       objectReference: {fileID: 0}
+    - target: {fileID: 1657816830638447270, guid: 43f9f5cb5f646f14fbdf2a0c67ad9e96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297973038717664837, guid: 43f9f5cb5f646f14fbdf2a0c67ad9e96, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5186053482192070780, guid: 43f9f5cb5f646f14fbdf2a0c67ad9e96, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
