@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class WorldState : MonoBehaviour
 {
+    [SerializeField]
+    public bool fireHandObtained = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +14,10 @@ public class WorldState : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void fireHandObtantion(){
+        Debug.Log("Fire Hand Obtained");
+        fireHandObtained = true;
     }
 }
