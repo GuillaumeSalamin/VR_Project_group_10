@@ -31,7 +31,7 @@ public class FireHand : MonoBehaviour
         {
             Debug.Log("A button: " + Abutton);
         }
-        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 rightVelocity))
+        if (_inputData._leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool Bbutton))
         {
             Debug.Log("B button: " + Bbutton);
         }

@@ -20,10 +20,15 @@ public class InputData : MonoBehaviour
         
         if(!_rightController.isValid)
             InitializeInputDevice(InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Right, ref _rightController);
+            Debug.Log("right controller invalid");
         if (!_leftController.isValid) 
             InitializeInputDevice(InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Left, ref _leftController);
+            Debug.Log("left controller invalid");
         if (!_HMD.isValid) 
             InitializeInputDevice(InputDeviceCharacteristics.HeadMounted, ref _HMD);
+            Debug.Log("HMD invalid");
+        if(_rightController.isValid && _leftController.isValid && _HMD.isValid)
+            Debug.Log("All devices are connected");
 
     }
 
