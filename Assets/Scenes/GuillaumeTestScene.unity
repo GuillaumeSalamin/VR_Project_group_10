@@ -437,7 +437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &349506583
 Transform:
   m_ObjectHideFlags: 0
@@ -1112,6 +1112,10 @@ PrefabInstance:
     - target: {fileID: 8350852204661450756, guid: c4ac12ae0c772a84a9b27b54a49b3472, type: 3}
       propertyPath: m_projectionMatrixMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774230373298780283, guid: c4ac12ae0c772a84a9b27b54a49b3472, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2015,6 +2019,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740978134}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1835686010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8774230373298780283, guid: c4ac12ae0c772a84a9b27b54a49b3472, type: 3}
+  m_PrefabInstance: {fileID: 1013237714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1880947865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,6 +2398,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534328039}
     m_Modifications:
+    - target: {fileID: 2219747691643486953, guid: 64fa651b1458db442b2cb3ca9a7ba9b9, type: 3}
+      propertyPath: m_Radius
+      value: 0.87
+      objectReference: {fileID: 0}
     - target: {fileID: 2904419327356432459, guid: 64fa651b1458db442b2cb3ca9a7ba9b9, type: 3}
       propertyPath: m_Name
       value: Fire Hand Pillar
@@ -2434,6 +2447,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5870771435096076389, guid: 64fa651b1458db442b2cb3ca9a7ba9b9, type: 3}
+      propertyPath: WorldState
+      value: 
+      objectReference: {fileID: 451222104}
+    - target: {fileID: 7260360442184081040, guid: 64fa651b1458db442b2cb3ca9a7ba9b9, type: 3}
       propertyPath: WorldState
       value: 
       objectReference: {fileID: 451222104}
@@ -2494,6 +2511,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9110189754656554139, guid: c4282e27cee67ea4b825ea9007513076, type: 3}
+      propertyPath: FireHand
+      value: 
+      objectReference: {fileID: 1835686010}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2513,7 +2534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2092592355620265580, guid: 81ef50bf1fd984d42b4e4ab692e84c9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2092592355620265580, guid: 81ef50bf1fd984d42b4e4ab692e84c9e, type: 3}
       propertyPath: m_LocalPosition.z
